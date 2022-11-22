@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>abyditya</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/glob.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="./assets/js/transition.js" defer></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="./assets/js/Navbar.js" defer></script>
+    <script src="./assets/js/contact.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</head>
+
+<body data-barba="wrapper">
+    <div class="loader">
+        <div class="page-transition">
+        </div>
+    </div>
+    <main data-barba="container" data-barba-namespace="home-section">
+        <section id="navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="/">abyditya</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <button class="nav-link" onclick="home()">home</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" onclick="commission()">commission</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" onclick="contact()">contact</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section id="banner">
+            <div class="banner">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <p class="first-title">abyditya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="orientasi" class="py-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <h4 class="title" data-aos="fade-right">&#128075; Hello, I'm <strong>abyditya</strong></h4>
+                        <h1 class="font-30 subtitle fw-bold mt-1">Get to know more about me!</h1>
+                        <p class="description">I hope you will get to know a little bit <br /> about me and enjoy my
+                            work.</p>
+                        <button data-aos="zoom-out" class="btn btn-light btn-talk btn-wide" onclick="contact()"><i
+                                class="fa-regular fa-envelope-dot"></i> Let's Talk!</button>
+                    </div>
+                    <div class="col">
+                        <section class="image"></section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="container py-5">
+            <h1 class="divider-page">Featured portfolio☻</h1>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card portfolio-crd " data-aos="fade-up">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio</h5>
+                            <p class="card-text">Portfolio site with BarbaJS, GSAP, Bootstrap and can be accessed by
+                                everyone</p>
+                            <span>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3"></i>
+                                <i class="fa-brands fa-bootstrap"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card portfolio-crd" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-body">
+                            <h5 class="card-title">quikLab</h5>
+                            <p class="card-text">Free basic frontend coding course</p>
+                            <span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
+                                    viewBox="0 0 24 24" class="text-theme-800 dark:text-theme-200" height="1em"
+                                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <title></title>
+                                    <path
+                                        d="M11.5725 0c-.1763 0-.3098.0013-.3584.0067-.0516.0053-.2159.021-.3636.0328-3.4088.3073-6.6017 2.1463-8.624 4.9728C1.1004 6.584.3802 8.3666.1082 10.255c-.0962.659-.108.8537-.108 1.7474s.012 1.0884.108 1.7476c.652 4.506 3.8591 8.2919 8.2087 9.6945.7789.2511 1.6.4223 2.5337.5255.3636.04 1.9354.04 2.299 0 1.6117-.1783 2.9772-.577 4.3237-1.2643.2065-.1056.2464-.1337.2183-.1573-.0188-.0139-.8987-1.1938-1.9543-2.62l-1.919-2.592-2.4047-3.5583c-1.3231-1.9564-2.4117-3.556-2.4211-3.556-.0094-.0026-.0187 1.5787-.0235 3.509-.0067 3.3802-.0093 3.5162-.0516 3.596-.061.115-.108.1618-.2064.2134-.075.0374-.1408.0445-.495.0445h-.406l-.1078-.068a.4383.4383 0 01-.1572-.1712l-.0493-.1056.0053-4.703.0067-4.7054.0726-.0915c.0376-.0493.1174-.1125.1736-.143.0962-.047.1338-.0517.5396-.0517.4787 0 .5584.0187.6827.1547.0353.0377 1.3373 1.9987 2.895 4.3608a10760.433 10760.433 0 004.7344 7.1706l1.9002 2.8782.096-.0633c.8518-.5536 1.7525-1.3418 2.4657-2.1627 1.5179-1.7429 2.4963-3.868 2.8247-6.134.0961-.6591.1078-.854.1078-1.7475 0-.8937-.012-1.0884-.1078-1.7476-.6522-4.506-3.8592-8.2919-8.2087-9.6945-.7672-.2487-1.5836-.42-2.4985-.5232-.169-.0176-1.0835-.0366-1.6123-.037zm4.0685 7.217c.3473 0 .4082.0053.4857.047.1127.0562.204.1642.237.2767.0186.061.0234 1.3653.0186 4.3044l-.0067 4.2175-.7436-1.14-.7461-1.14v-3.066c0-1.982.0093-3.0963.0234-3.1502.0375-.1313.1196-.2346.2323-.2955.0961-.0494.1313-.054.4997-.054z">
+                                    </path>
+                                </svg>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
+                                    viewBox="0 0 24 24" class="text-teal-500" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title></title>
+                                    <path
+                                        d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card portfolio-crd" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-body">
+                            <h5 class="card-title">DesakuLab</h5>
+                            <p class="card-text">A Massive community platform for everyone</p>
+                            <span>
+                                <i class="fa-brands fa-discord"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="commission" class="py-5">
+            <div class="ad">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <p class="first-title">web commission ?</p>
+                                <p class="first-desc">want your own portfolio website? im here to make 1 for you with
+                                    affordable price!</p>
+                                <a href="/commission.html" class="btn btn-light">Check out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <div class="container">
+
+        </div>
+        <section id="contact">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <h4 data-aos="fade-right" class="title">🎉 Contact</h4>
+                        <h1 class="font-30 subtitle fw-bold mt-1">Let's work together</h1>
+                        <p class="description">CONTACT DETAILS</p>
+                        <p class="contact-details" data-aos="fade-down">
+                            <i class="fa-light fa-envelope"></i> hey@abyditya.space <br>
+                        </p>
+                        <p class="contact-details" data-aos="fade-up">
+                            <i class="fa-light fa-location-dot"></i> indonesia
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="alert alert-secondary my-alert d-none" role="alert">
+                          <strong>Success!</strong> we just received your contact
+                        </div>
+                        <form name="contact">
+                            <div class="mb-3">
+                                <label class="form-label"><span class="label-number">01</span> What's your
+                                    name?</label>
+                                <input name="name" type="text" placeholder="Name *" class="form-control" required>
+                                <hr class="form-hr">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label"><span class="label-number">02</span> What's your
+                                    email?</label>
+                                <input name="email" type="email" placeholder="Email *" class="form-control" required>
+                                <hr class="form-hr">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label"><span class="label-number">03</span> Your
+                                    message</label>
+                                <textarea name="message" rows="3" type="email" placeholder="Hello abyan, can you help me with... *"
+                                    class="form-control" required></textarea>
+                                <hr class="form-hr">
+                            </div>
+                            <button type="submit" class="btn-kirim btn btn-submt">Send it!</button>
+                            <button type="submit" class="btn-loading d-none btn btn-submt">
+                                <div class="spinner-grow text-light" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <footer>
+                <div class="container">
+                    <section class="footer text-center">
+                        <p class="title">Find an issue with this page? <a href="https://instagram.com/aby.ditya"
+                                target="_blank">Contact Me via Instagram 👈</a></p>
+                        <p class="title">Copyright © 2022<br>
+                            Created with <img src="https://cdn.abyditya.space/r/img-smiling-face-with-hearts.png"
+                                width="20" alt=""> by <a href="https://instagram.com/aby.ditya"
+                                target="_blank">Abyditya</a></p>
+                    </section>
+                </div>
+            </footer>
+        </section>
+</body>
+<script>
+    AOS.init({
+        once: true,
+    });
+</script>
+
+</html>

@@ -1,0 +1,118 @@
+/*
+
+╭───────────────────────────────────╮ ┌──── Fonts ◂
+│                                   │ ├────── Variables
+│           Global Styling          ├─┾─── GLobal Page Configuration
+│                                   │ ┕────── Scrollbar
+╰───────────────────────────────────╯
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sofia-pro');
+@import url('https://fonts.cdnfonts.com/css/panton');
+
+/*
+
+╭───────────────────────────────────╮ ┌──── Fonts
+│                                   │ ├────── Variables ◂
+│           Global Styling          ├─┾─── GLobal Page Configuration
+│                                   │ ┕────── Scrollbar
+╰───────────────────────────────────╯
+
+*/
+
+:root {
+    --base-100: #131313;
+    --base-200: #1c1c1c;
+    --base-300: #242424;
+    --typography: #fff;
+    --primary: #759244;
+    --secondary: #ff6b3a
+}
+
+/*
+
+╭───────────────────────────────────╮ ┌──── Fonts
+│                                   │ ├────── Variables
+│           Global Styling          ├─┾─── GLobal Page Configuration ◂
+│                                   │ ┕────── Scrollbar
+╰───────────────────────────────────╯
+
+*/
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Pro', sans-serif
+}
+
+html {
+    font-size: 130%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    scroll-behavior: smooth!important
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--base-100)!important
+}
+
+body {
+    background-color: var(--base-100);
+    font-family: poppins, sans-serif;
+    background-position: right center;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    color: var(--typography);
+    background-size: 50% auto
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit
+}
+
+::selection {
+    background: #eee;
+    color: #1f1e1c
+}
+
+/*
+
+╭───────────────────────────────────╮ ┌──── Fonts
+│                                   │ ├────── Variables
+│           Global Styling          ├─┾─── GLobal Page Configuration
+│                                   │ ┕────── Scrollbar ◂
+╰───────────────────────────────────╯
+
+*/
+
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 2em;
+    border: .36em var(--base-200) solid
+}
+
+::-webkit-scrollbar-corner {
+    background: 0 0
+}
+
+main {
+    padding-top: 7.3rem;
+}
+
+hr.divider {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+    border-top: 5px dashed #717171 !important;
+}

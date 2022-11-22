@@ -1,0 +1,435 @@
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+}
+.page-transition{
+    position: absolute;
+    top: 0;
+    background-color: var(--base-300);
+    width: 100%;
+    height: 0%;
+}
+
+/*
+
+╭───────────────────────────────────╮
+│                                   │
+│               Navbar              │
+│                                   │
+╰───────────────────────────────────╯
+
+*/
+
+.navbar {
+    background-color: var(--base-200) !important;
+    padding: 30px 10px !important;
+    margin: 0 .9rem !important;
+    margin-top: .9rem !important;
+    z-index: 3 !important;
+    border-radius: 8px !important;
+    box-shadow: 2px 2px 18px 3px rgba(0, 0, 0, .75) !important;
+    -webkit-box-shadow: 2px 2px 18px 3px rgba(0, 0, 0, .75) !important;
+    -moz-box-shadow: 2px 2px 18px 3px rgba(0, 0, 0, .75) !important;
+}
+
+.navbar-brand {
+    font-family: 'Panton' !important;
+}
+
+#navbarNav > ul > li:nth-child(n) > button,
+#navbarNav>ul>li:nth-child(n)>a {
+    background: var(--base-200);
+    border: none;
+    margin: 0 .5rem 0 .5rem !important;
+    text-transform: capitalize !important;
+}
+
+#navbarNav > ul > li:nth-child(n) > button:hover,
+#navbarNav>ul>li:nth-child(n)>a:hover {
+    margin: 0 .5rem 0 .5rem !important;
+    text-transform: capitalize !important;
+    color: var(--primary) !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler,
+.navbar-toggler-icon:focus {
+    box-shadow: none!important;
+    outline: none!important;
+    border: 0!important;
+    transition: .3s !important;
+}
+
+/*
+
+╭───────────────────────────────────╮
+│                                   │
+│               Banner              │
+│                                   │
+╰───────────────────────────────────╯
+
+*/
+
+.banner {
+    color: #fff !important;
+    background-image: url('https://cdn.abyditya.space/r/wp8963394.png') !important;
+    background-position: center center !important;
+    margin: 0 .9rem !important;
+    background-size: cover !important;
+    position: relative !important;
+    border-radius: 8px !important;
+    min-height: 400px !important;
+    padding-top: 60px !important;
+    height: auto !important;
+}
+
+.banner:before {
+    background-color: rgba(29, 29, 29, .7) !important;
+    backdrop-filter: blur(4px) !important;
+    position: absolute !important;
+    border-radius: 8px !important;
+    height: 100% !important;
+    content: "" !important;
+    width: 100% !important;
+    z-index: 1 !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+
+.image {
+    color: #fff !important;
+    background-image: url('https://cdn.abyditya.space/r/Screenshot_2022-11-20_131802.png') !important;
+    background-position: center center !important;
+    margin-top: 7.8rem !important;
+    margin: 0 .9rem !important;
+    background-size: cover !important;
+    position: relative !important;
+    border-radius: 8px !important;
+    min-height: 400px !important;
+    padding-top: 60px !important;
+    height: auto !important;
+}
+
+.image:before {
+    background-color: rgba(29, 29, 29, .7) !important;
+    backdrop-filter: blur(0px) !important;
+    position: absolute !important;
+    border-radius: 8px !important;
+    height: 100% !important;
+    content: "" !important;
+    width: 100% !important;
+    z-index: 1 !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+
+.banner .first-title {
+    font-family: panton, sans-serif !important;
+    text-transform: uppercase !important;
+    margin: 0 0 12px !important;
+    position: relative !important;
+    padding-top: 5rem !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    font-size: 50px !important;
+    z-index: 2 !important;
+}
+
+@media only screen and (max-width:600px) {
+
+    .image {
+        display: none;
+    }
+}
+
+/*
+
+╭───────────────────────────────────╮
+│                                   │
+│             typography            │
+│                                   │
+╰───────────────────────────────────╯
+
+*/
+
+.ad {
+    color: #fff !important;
+    background-image: url('https://cdn.abyditya.space/r/Screenshot_2022-11-20_131802.png') !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    position: relative !important;
+    min-height: 200px !important;
+    padding-top: 60px !important;
+    height: auto !important;
+}
+
+.ad:before {
+    background-color: rgba(29, 29, 29, .7) !important;
+    backdrop-filter: blur(4px) !important;
+    position: absolute !important;
+    height: 100% !important;
+    content: "" !important;
+    width: 100% !important;
+    z-index: 1 !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+
+.ad .first-title {
+    
+    font-family: panton, sans-serif !important;
+    text-transform: uppercase !important;
+    position: relative !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    font-size: 50px !important;
+    z-index: 2 !important;
+}
+
+.ad .first-desc {
+    text-transform: lowercase !important;
+    position: relative !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    font-size: 15px !important;
+    z-index: 2 !important;
+}
+
+.ad .btn {
+    position: relative !important;
+    z-index: 2 !important;
+    border-radius: 0;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width:600px) {
+    .ad .first-title {
+        font-size: 25px !important;
+    }
+
+    .ad .first-desc {
+        font-size: 15px !important;
+    }
+    
+}
+
+/*
+
+╭───────────────────────────────────╮
+│                                   │
+│             typography            │
+│                                   │
+╰───────────────────────────────────╯
+
+*/
+
+.title {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.subtitle {
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.description {
+    color: #5b656a;
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn.btn-talk {
+    background: var(--primary);
+    padding: 0.8rem;
+    border-radius: 40px;
+    border-radius: 0;
+    box-shadow: 0 10px 0 #181d27;
+    border: 4px solid #232833;
+    transition: .3s;
+}
+
+.btn.btn-talk:hover {
+    background: var(--primary) !important;
+    border: none !important;
+    padding: 0.8rem !important;
+    box-shadow: 0 7px 0 #181d27 !important;
+    border: 4px solid #232833 !important;
+    transform: translateY(5px) !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        margin: 0 7rem 0 7rem;
+    }
+
+    .hero.subtitle {
+        font-size: 79px;
+    }
+
+    
+}
+/*
+
+╭───────────────────────────────────╮
+│                                   │
+│              project              │
+│                                   │
+╰───────────────────────────────────╯
+
+*/
+
+.divider-page {
+    color: white;
+    font-weight: 700;
+}
+
+.portfolio-crd {
+    color: white;
+    background: var(--base-200) !important;
+    border-radius: 0% !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    transition: 0.1s ease !important;
+    border-image: linear-gradient(to right, rgb(92, 152, 255), rgb(50, 204, 140)) 1 !important;
+}
+
+.portfolio-crd:hover {
+    transform: translateY(-7px) !important;
+}
+
+.portfolio-crd .card-title {
+    font-weight: 600;
+}
+.portfolio-crd .card-text {
+    font-weight: 200;
+}
+
+/*
+
+╭───────────────────────────────────╮
+│                                   │
+│              Contact              │
+│                                   │
+╰───────────────────────────────────╯
+
+*/
+
+.contact-details {
+    color: #fff;
+    list-style: none;
+}
+
+.contact-details:hover {
+    color: var(--primary);
+    list-style: none;
+    cursor: pointer;
+}
+
+.contact-details .fa-light {
+    margin-right: 0.5rem;
+}
+
+.contact-details .fa-light:hover {
+    margin-right: 0.5rem;
+    color: var(--primary);
+}
+
+body > main > div.container.py-5 > section > section > div > div > div:nth-child(1) > p.contact-details > i.fa-light.fa-location-dot {
+    margin-right: 0.64rem;
+    margin-left: 0.10rem;
+}
+
+/*
+
+╭───────────────────────────────────╮
+│                                   │
+│                Form               │
+│                                   │
+╰───────────────────────────────────╯
+
+*/
+
+.form-label {
+    color: rgb(236, 236, 236);
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.form-control {
+    font-size: 28px !important;
+    background: transparent !important;
+    box-shadow: none!important;
+    outline: none!important;
+    border: 0!important;
+    color: white !important;
+}
+
+.label-number {
+    color: #666666;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.btn-submt {
+    background-color: #759224 !important;
+    box-shadow: none!important;
+    outline: none!important;
+    border: 0!important;
+    padding: 1rem 5rem !important;
+    font-size: 30px !important;
+}
+
+body > main > div.container.py-5 > section > section > div > div > div:nth-child(2) > form > div:nth-child(n) > hr {
+    border-bottom: 3px solid #3f3f3f !important;
+}
+
+@media only screen and (min-width: 992px) {
+    .form-control { 
+        margin-left: 2.3rem !important;
+    }
+}
+
+hr.form-hr {
+    border-top: #3f3f3f solid 3px;
+}
+
+/*
+
+╭───────────────────────────────────╮
+│                                   │
+│               Footer              │
+│                                   │
+╰───────────────────────────────────╯
+
+*/
+
+footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+footer p.title {
+    color: #b2becd;
+}
+
+footer p.title a {
+    color: #759224;
+    text-decoration: none;
+}
+
+footer p.title a:hover {
+    color: #759224;
+    opacity: 80%;
+    text-decoration: none;
+}
