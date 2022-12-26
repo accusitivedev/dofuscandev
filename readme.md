@@ -5,14 +5,14 @@ About me();
 class oCoryn:
 
     def __init__(self):
-        self.username = 'oCoryn'
-        self.web = 'soon'
+        self.username = 'Dofuscan'
+        self.web = 'https://abyditya.space'
         self.code = {
             'skills': ['HTML', 'CSS', 'JavaScript', 'Python'],
             'database': ['MySQL'],
-            'devops': ['Nginx', 'GitHub Actions', 'Heroku'],
-            'tools': ['GIT', 'GitHub', 'BootsTrap'],
-            'Working at': ['DesakuLab']
+            'Frameworks': ['ReactJS', TailwindCSS]
+            'Library': ['ReactJS', 'ExpressJS'],
+            'Tools': ['Bootstrap', 'Bulma']
         }
 
     def __str__(self):
