@@ -10,7 +10,7 @@ class oCoryn:
         self.code = {
             'skills': ['HTML', 'CSS', 'JavaScript', 'Python'],
             'database': ['MySQL'],
-            'Frameworks': ['ReactJS', TailwindCSS]
+            'Frameworks': ['ReactJS', 'TailwindCSS'],
             'Library': ['ReactJS', 'ExpressJS'],
             'Tools': ['Bootstrap', 'Bulma']
         }
