@@ -8,7 +8,7 @@ class oCoryn:
         self.username = 'oCoryn'
         self.web = 'soon'
         self.code = {
-            'skills': ['HTML', 'CSS', 'JavaScript'],
+            'skills': ['HTML', 'CSS', 'JavaScript', 'Python'],
             'database': ['MySQL'],
             'devops': ['Nginx', 'GitHub Actions', 'Heroku'],
             'tools': ['GIT', 'GitHub', 'BootsTrap'],
